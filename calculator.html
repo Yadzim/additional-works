@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculator.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="contener">
+        <form name="form" action="">
+
+            <input type="text" name="screenn" class="input" id="input"  placeholder="0" disabled/>
+
+            <div class="grid">
+                <input type="reset" value="c" class="box clear">
+                <input type="button" name="pm" value="+/-" class="box ishora" onClick="calcNumbers()">
+                <input type="button" name="bq" value="%" class="box" onClick="calcNumbers(bq.value)">
+                <input type="button" name="divb" value="/" class="box" onClick="calcNumbers(divb.value)">
+                <input type="button" name="b7" value="7" class="box number" onClick="calcNumbers(b7.value)">
+                <input type="button" name="b8" value="8" class="box number" onClick="calcNumbers(b8.value)">
+                <input type="button" name="b9" value="9" class="box number" onClick="calcNumbers(b9.value)">
+                <input type="button" name="addb" value="+" class="box" onClick="calcNumbers(addb.value)">
+
+                <input type="button" name="b4" value="4" class="box number" onClick="calcNumbers(b4.value)">
+                <input type="button" name="b5" value="5" class="box number" onClick="calcNumbers(b5.value)">
+                <input type="button" name="b6" value="6" class="box number" onClick="calcNumbers(b6.value)">
+                <input type="button" name="subb" value="-" class="box" onClick="calcNumbers(subb.value)">
+                
+                <input type="button" name="b1" value="1" class="box number" onClick="calcNumbers(b1.value)">
+                <input type="button" name="b2" value="2" class="box number" onClick="calcNumbers(b2.value)">
+                <input type="button" name="b3" value="3" class="box number" onClick="calcNumbers(b3.value)">
+                <input type="button" name="mulb" value="*" class="box" onClick="calcNumbers(mulb.value)">
+                
+                <input type="button" name="b0" value="0" class="box number" onClick="calcNumbers(b0.value)">
+                <input type="button" name="potb" value="." class="box" onclick="calcNumbers(potb.value)">
+                <input type="button" name="back" value="<=" class="box" onClick="calcNumbers()">
+                <input type="button" value="=" class="box teng" onClick="screenn.value=eval(screenn.value)">
+            
+                
+            </div>
+        </form>
+    </div>
+    <p class="deep">Simple calculator by <a href="#">Azizxon</a></p>
+</body>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".contener"), {
+		max: 2,
+		speed: 600
+	});
+    
+    function calcNumbers(result) {
+        form.screenn.value = form.screenn.value + result;
+    }
+</script>
+
+</html>
