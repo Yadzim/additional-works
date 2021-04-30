@@ -11,13 +11,14 @@
 
 <body>
     <div class="contener">
+        <span>Yadzim</span>
         <form name="form" action="">
 
             <input type="text" name="screenn" class="input" id="input"  placeholder="0" disabled/>
 
             <div class="grid">
                 <input type="reset" value="c" class="box clear">
-                <input type="button" name="pm" value="+/-" class="box ishora" onClick="calcNumbers()">
+                <input type="button" name="pm" value="+/-" class="box ishora" onClick="calcNumbers(p.value)">
                 <input type="button" name="bq" value="%" class="box" onClick="calcNumbers(bq.value)">
                 <input type="button" name="divb" value="/" class="box" onClick="calcNumbers(divb.value)">
                 <input type="button" name="b7" value="7" class="box number" onClick="calcNumbers(b7.value)">
@@ -37,14 +38,14 @@
                 
                 <input type="button" name="b0" value="0" class="box number" onClick="calcNumbers(b0.value)">
                 <input type="button" name="potb" value="." class="box" onclick="calcNumbers(potb.value)">
-                <input type="button" name="back" value="<=" class="box" onClick="calcNumbers()">
+                <input type="button" name="back" value="<" class="box" onClick="calcNumbers(p,value)">
                 <input type="button" value="=" class="box teng" onClick="screenn.value=eval(screenn.value)">
             
                 
             </div>
         </form>
     </div>
-    <p class="deep">Simple calculator by <a href="#">Azizxon</a></p>
+    <p class="deep">Calculator by <a href="#">Azizxon</a></p>
 </body>
 <script type="text/javascript" src="vanilla-tilt.js"></script>
 <script>

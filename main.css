@@ -88,6 +88,10 @@ body::after{
     color: rgba(255, 255, 255, 0.3);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: none;
+    border-bottom: none;
+    outline: none;
+    /* transition: 0s; */
 }
 .box::selection{
     background: none;
@@ -101,7 +105,6 @@ body::after{
 }
 .number{
     color: rgba(255, 255, 255, 0.7);
-    /* text-shadow: 3px rgba(255, 255, 255, 0.7); */
 }
 .clear, .teng{
     color: tomato;
@@ -126,6 +129,15 @@ body::after{
     text-decoration: none;
     text-shadow: 0 0 10px tomato;
 }
+span{
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.26);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.158);
+}
+
 
 @media screen and (max-width:720px) {
     body{
