@@ -18,7 +18,7 @@
 
             <div class="grid">
                 <input type="reset" value="c" class="box clear">
-                <input type="button" name="pm" value="+/-" class="box ishora" onClick="calcNumbers(p.value)">
+                <input type="button" name="pm" value="+/-" class="box ishora" onClick="minus()">
                 <input type="button" name="bq" value="%" class="box" onClick="calcNumbers(bq.value)">
                 <input type="button" name="divb" value="/" class="box" onClick="calcNumbers(divb.value)">
                 <input type="button" name="b7" value="7" class="box number" onClick="calcNumbers(b7.value)">
@@ -56,6 +56,9 @@
     
     function calcNumbers(result) {
         form.screenn.value = form.screenn.value + result;
+    }
+    function minus(){
+        form.screenn.value = form.screenn.value * (-1);
     }
 </script>
 
